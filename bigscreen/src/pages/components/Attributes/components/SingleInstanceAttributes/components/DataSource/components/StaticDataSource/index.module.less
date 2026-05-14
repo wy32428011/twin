@@ -1,0 +1,25 @@
+.staticDataSource {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 8px;
+
+  :global {
+    .ant-btn-text {
+      padding: 4px 8px;
+    }
+  }
+}
+
+.editorWrapper {
+  flex: 1;
+  min-height: 300px;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  overflow: hidden;
+
+  &:focus-within {
+    border-color: #1890ff;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+  }
+}

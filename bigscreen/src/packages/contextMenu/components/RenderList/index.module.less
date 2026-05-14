@@ -1,0 +1,43 @@
+.renderList {
+  position: relative;
+  background: white;
+
+  &_disabled {
+    cursor: not-allowed !important;
+    border-left-color: transparent !important;
+    background: #f6f6f6 !important;
+    color: #cfcfcf !important;
+    font-weight: normal !important;
+  }
+
+  &_item {
+    width: 120px;
+    background: white;
+    padding: 6px 8px;
+    position: relative;
+    border-left: 2px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+    cursor: pointer;
+
+    &:hover{
+      font-weight: bold;
+      background: rgba(24, 144, 255, 0.1);
+      border-left-color: @primaryHover;
+    }
+
+    &_title {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      line-height: 18px;
+    }
+
+    &_unselectable {
+      cursor: default;
+    }
+  }
+}

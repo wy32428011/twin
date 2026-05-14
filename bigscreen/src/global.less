@@ -1,0 +1,57 @@
+/**
+ * global less.
+ */
+@import "./cover-antd.less";
+
+@color: rgba(0, 0, 0, 0.5);
+@primary: #096dd9;
+@primaryHover: rgba(24, 144, 255, 0.77);
+@borderColor: #e7e7e7;
+@border: 1px solid @borderColor;
+@borderDeepColor: #ccc;
+@borderDeep: 1px solid @borderDeepColor;
+
+@boxShadowRadius: 10px;
+@boxShadowColor: @borderColor;
+@boxShadow:
+  2px 0 @boxShadowRadius @boxShadowColor,
+  -2px 0 @boxShadowRadius @boxShadowColor,
+  0 2px @boxShadowRadius @boxShadowColor;
+
+.flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-text {
+  .theme-color();
+  font-size: 12px;
+}
+
+.theme-color {
+  color: @color;
+}
+
+.text-ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.border-right {
+  border-right: @border;
+}
+
+.icon_clickable {
+  cursor: pointer;
+  transition: all .3s;
+
+  &:hover {
+    color: @primaryHover !important;
+  }
+}
+
+.icon_selected {
+  color: @primaryHover;
+}

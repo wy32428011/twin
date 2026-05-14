@@ -1,0 +1,19 @@
+/**
+ * 选中实例全部上移1像素
+ */
+import { addHistory } from "@/packages/shortCutKeys";
+import { RbsEngine } from "@/export";
+
+export function selectedMoveUp() {
+  const engine = RbsEngine.getActiveEngine();
+  if (!engine) return;
+  engine.instance.getAllSelected().forEach((instance) => {
+    const componentNode = engine.componentNode.get(instance.id);
+    if (componentNode) {
+      engine.componentNode.update(instance.id, {
+        y: (componentNode?.y || 0) - 1,
+      });
+    }
+  });
+  addHistory("组件上移");
+}

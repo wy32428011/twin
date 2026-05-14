@@ -1,0 +1,17 @@
+/**
+ * 放大编辑器比例
+ */
+import { RbsEngine } from "@/export";
+
+export function zoomEditorLarger(times: number = 1) {
+  const engine = RbsEngine.getActiveEngine();
+  if (!engine) return;
+  const config = engine.config.getConfig();
+  const scale = config.scale;
+  if (scale >= config.scaleMaxZoom) {
+    return;
+  }
+  engine.config.setConfig({
+    scale: parseFloat(Math.min(config.scaleMaxZoom, scale + config.scaleStep * times).toFixed(2)),
+  });
+}

@@ -1,0 +1,15 @@
+node_modules
+dist
+.idea
+.vscode
+.DS_Store
+.dumi/tmp*
+docs-dist
+
+# build product
+/umd
+/es
+/cjs
+/types
+
+tsconfig.tsbuildinfo

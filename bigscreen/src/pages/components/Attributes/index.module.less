@@ -1,0 +1,15 @@
+.attributes {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  color: @color;
+
+  :global{
+    // 重置antd字体颜色、大小
+    [class^="ant"] {
+      color: @color;
+      font-size: 12px;
+    }
+  }
+}

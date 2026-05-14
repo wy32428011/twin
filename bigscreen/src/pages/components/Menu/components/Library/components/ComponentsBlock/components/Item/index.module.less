@@ -1,0 +1,32 @@
+.componentItem {
+  user-select: none;
+  width: 33.3%;
+  height: 110px;
+  display: inline-flex;
+  flex-direction: column;
+  transition: all 0.3s;
+  cursor: move;
+
+  &:hover {
+    box-shadow: @boxShadow;
+  }
+
+  &_body {
+    padding-top: 8px;
+    box-sizing: border-box;
+    flex: 0 0 60px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &_footer {
+    flex: 1;
+    padding: 6px 12px 14px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+}

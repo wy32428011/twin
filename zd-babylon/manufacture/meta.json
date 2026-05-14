@@ -1,0 +1,14 @@
+{
+    "meshes": [
+        {
+            "scaling": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "metadata": {
+                "cloneType": "instance"
+            }
+        }
+    ]
+}

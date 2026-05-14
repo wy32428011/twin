@@ -1,0 +1,49 @@
+.page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  background: #EDEFF3;
+  flex-direction: column;
+  user-select: none;
+  @darkBoxShadowColor: rgba(0,0,0,0.1);
+
+  &_header {
+    min-height: 40px;
+    background: white;
+    border-bottom: @border;
+  }
+
+  &_body {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+
+    &_left {
+      height: 100%;
+      flex: 0 0 320px;
+      background: white;
+      box-shadow: 2px 0 10px @darkBoxShadowColor;
+      z-index: 1;
+    }
+
+    &_main {
+      flex: 1;
+      overflow: auto;
+      z-index: 0;
+    }
+
+    &_right {
+      height: 100%;
+      flex: 0 0 300px;
+      background: white;
+      box-shadow: -2px 0 10px @darkBoxShadowColor;
+      z-index: 1;
+      overflow: hidden;
+    }
+  }
+
+  &_footer {
+  }
+}

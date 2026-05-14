@@ -1,0 +1,362 @@
+/* DataSourceKeyConfig styles - avue-data 风格 */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 8px 0;
+  font-size: 12px;
+}
+
+.staticSection {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sectionTitle {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.85);
+  margin-bottom: 4px;
+}
+
+.sectionTip {
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.45);
+  margin-bottom: 8px;
+}
+
+.apiSection {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.combinedSection {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.label {
+  min-width: 70px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.flex1 {
+  flex: 1;
+  min-width: 100px;
+}
+
+.flex2 {
+  flex: 2;
+  min-width: 150px;
+}
+
+.numberInput {
+  width: 80px;
+  height: 24px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  padding: 0 8px;
+  font-size: 12px;
+}
+
+.numberInput:focus {
+  border-color: #1890ff;
+  outline: none;
+}
+
+.unit {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.45);
+  margin-left: 4px;
+}
+
+.collapse {
+  margin-top: 8px;
+}
+
+.collapse :global(.ant-collapse-header) {
+  padding: 8px 0 !important;
+  font-size: 12px;
+}
+
+.kvSection {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.02);
+  border-radius: 4px;
+}
+
+.kvHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.65);
+  padding: 0 4px;
+}
+
+.kvRow {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.kvRow > div {
+  flex: 1;
+}
+
+.filterSection {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filterHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filterPreview {
+  background: rgba(0, 0, 0, 0.02);
+  border-radius: 4px;
+  padding: 8px;
+  overflow-x: auto;
+}
+
+.filterPreview code {
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.75);
+  white-space: nowrap;
+}
+
+.previewSection {
+  margin-top: 12px;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  padding-top: 12px;
+}
+
+.previewHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.previewActions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.rawDataTag {
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.04);
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+
+.reloadIcon {
+  cursor: pointer;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.reloadIcon:hover {
+  color: #1890ff;
+}
+
+.loading,
+.error,
+.noData {
+  padding: 16px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.02);
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.error {
+  color: #ff4d4f;
+}
+
+.noData {
+  white-space: pre-wrap;
+  word-break: break-all;
+  max-height: 200px;
+  overflow: auto;
+}
+
+.tip {
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+/* 页面级数据源信息展示 */
+.pageDsInfo {
+  margin-top: 8px;
+}
+
+.dsDetail {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.02);
+  border-radius: 4px;
+}
+
+.dsMethod {
+  font-size: 10px;
+  padding: 2px 6px;
+  background: rgba(24, 144, 255, 0.1);
+  border-radius: 2px;
+  color: #1890ff;
+}
+
+.dsUrl {
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 12px;
+}
+
+/* 过滤器弹窗样式 */
+.filterModalContent {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.filterTip {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.65);
+  margin: 0;
+}
+
+.filterExamples {
+  background: rgba(0, 0, 0, 0.02);
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 12px;
+}
+
+.filterExamples p {
+  margin: 0 0 8px 0;
+  font-weight: 500;
+}
+
+.filterExamples ul {
+  margin: 0;
+  padding-left: 16px;
+}
+
+.filterExamples li {
+  margin-bottom: 4px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.filterExamples code {
+  background: rgba(0, 0, 0, 0.06);
+  padding: 2px 4px;
+  border-radius: 2px;
+  cursor: pointer;
+  color: #1890ff;
+}
+
+.filterExamples code:hover {
+  background: rgba(24, 144, 255, 0.1);
+}
+
+/* Tab 内容样式 */
+.tabContent {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.tabHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+}
+
+.tabDescIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: 50%;
+  cursor: help;
+}
+
+.tabDescIcon:hover {
+  color: #1890ff;
+  background: rgba(24, 144, 255, 0.1);
+}
+
+.tabDesc {
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.tabActions {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.gridPreview {
+  background: rgba(0, 0, 0, 0.02);
+  border-radius: 4px;
+  height: 420px;
+  overflow: auto;
+}
+
+.jsonPreview {
+  background: rgba(0, 0, 0, 0.02);
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 11px;
+  overflow: auto;
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+/* 原始数据编辑弹窗 */
+.rawDataModalContent {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* 手动请求按钮区域 */
+.manualRequestBar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}

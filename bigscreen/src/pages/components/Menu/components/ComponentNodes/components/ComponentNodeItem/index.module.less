@@ -1,0 +1,51 @@
+.componentNodeItem {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  cursor: pointer;
+
+  &_selected {
+    background: rgba(0, 119, 255, 0.1) !important;
+  }
+
+  &:hover {
+    background: rgba(0, 119, 255, 0.06)
+  }
+
+  &_icon {
+    height: 100%;
+    flex: 0 0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0 6px;
+    box-sizing: border-box;
+  }
+
+  &_name {
+    flex: 1;
+  }
+
+  &_tail {
+    gap: 8px;
+    display: flex;
+    flex: 0 0 40px;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.3);
+    cursor: default;
+
+    & > div {
+      width: 12px;
+    }
+
+    &_operatable {
+      color: @color;
+      cursor: pointer;
+
+      &:hover {
+        color: @primaryHover;
+      }
+    }
+  }
+}

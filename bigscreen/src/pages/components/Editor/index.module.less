@@ -1,0 +1,20 @@
+.editor {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  &_render {
+    @boxShadowRadius: 12px;
+    @boxShadowColor: #f1f1f1;
+    @boxShadow:
+      4px 0 @boxShadowRadius @boxShadowColor,
+      -4px 0 @boxShadowRadius @boxShadowColor,
+      0 4px @boxShadowRadius @boxShadowColor;
+
+    position: relative;
+    background: white;
+    box-shadow: @boxShadow;
+  }
+}
+

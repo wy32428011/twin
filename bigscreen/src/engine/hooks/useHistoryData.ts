@@ -1,0 +1,23 @@
+/**
+ * useHistory
+ * @description 查询历史
+ */
+import { useEffect, useState } from "react";
+import { HistoryData } from "@/packages/historyRecord/types";
+import { useEngineContext } from "@/export/context";
+
+export function useHistoryData() {
+  const { engine } = useEngineContext();
+
+  const [historyData, setHistoryData] = useState<HistoryData>(() => {
+    return engine.history.getHistoryData();
+  });
+
+  useEffect(() => {
+    engine.history.onChange((historyData) => {
+      setHistoryData(historyData);
+    });
+  }, []);
+
+  return historyData;
+}
